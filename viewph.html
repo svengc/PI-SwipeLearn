@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-black">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-md navbr-container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="./homeph.html">
+                        <img src="./IMG/logo.svg" alt="Logo"  height="70" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <div class="nav-links d-flex align-items-center">
+                    <a href="/login.html" class="me-4 text-decoration-none btn__secondary">Ingresa</a>
+                    <a href="register.html" class="me-4 text-decoration-none btn__principal">Registrate</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./IMG/banner-diseno-grafico.jpg" class="d-block w-100 object-fit-cover" alt="..." height="100%">
+              </div>
+              <div class="carousel-item">
+                <img src="./IMG/banner-fotografia.jpg" class="d-block w-100 object-fit-cover" alt="..." height="100%">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container ">
+            <div class="row justify-content-center">
+                <div class="col-md my-4">
+                    <div class="social-media--prehome d-flex align-items-center justify-content-center gap-5">
+                        <div class="social-media__preview col-md-4">
+                            <video autoplay loop muted>
+                                <source src="./IMG/ssstik.io_@gatitooficial8_1759674215740.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="socialMedia-preHomeIcon">
+                                <a href="#"><img src="./IMG/icon-favorite-white.svg" alt=""></a>
+                                <a href="#"><img src="./IMG/icon-list-white.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="social-media__content">
+                            <h2 class="my-4">Aprende al estilo de tus redes favoritas</h2>
+                            <p class="mb-4">Videos cortos, retos, tips y experiencias compartidas. Aquí no hay clases aburridas: cada contenido está pensado para inspirarte, entretenerte y ayudarte a crecer.  
+                            <br><br>
+                            Conecta con personas como tú, comparte lo que aprendes y transforma tu tiempo en scroll en momentos que te suman. Aprende, comenta, crea... ¡y disfruta el proceso!</p>
+                            <a href="./register.html" class="btn btn__principal mt-2">Comenzar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-prehome py-2">
+        <div class="container">
+            <div class="row footer-links list-unstyled text-center">
+                <ul >
+                    <li>
+                        <a href="#">información de contacto</a>
+                    </li>
+                    <li>
+                        <a href="#">Términos  y condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#">Politica de privacidad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

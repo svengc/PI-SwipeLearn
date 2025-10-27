@@ -1,0 +1,20 @@
+$svg-color: #95704D;
+$hover: #4F3D3D;
+
+
+.btn-principal {
+    background-color: var(--svg-color);
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid var(--svg-color);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: none;
+    &:hover {
+        background-color: var(--hover);
+        text-shadow: 0 0 1px var(--hover);
+        border: 1px solid var(--hover);
+        font-weight: bold;
+    }
+}
