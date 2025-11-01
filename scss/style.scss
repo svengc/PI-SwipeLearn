@@ -11,6 +11,32 @@ $icon-secondary: #A7B1BA;
 $icon-accent: #B58B5F;
 $icon-accent-hover: #C99963;
 
+
+
+.border-style1{
+    border: 3px solid $border-color;
+    border-radius: 10px;
+}
+.title{
+    color: $title-color;
+    font-weight: bold;
+}
+.paragraph{
+    color: $text-color;
+}
+.paragraph--secondary{
+    color: $icon-primary;
+}
+.bg-cards{
+    background-color: $cards-module;
+}
+
+.register{
+    min-height: 84vh;   
+}
+.fpassword{
+    min-height: 84vh;   
+}
 /* === Botón principal === */
 .btn__principal {
   background-color: $link-btn;
@@ -31,6 +57,32 @@ $icon-accent-hover: #C99963;
     color: #D6A86C;
     font-size: 18px;
 }
+.btn-hamburger {
+    border: none;
+    background: none;
+    padding: 6px;
+    transition: all 0.3s ease;
+  
+    .navbar-toggler-icon {
+      // Ícono en color de marca (#B58B5F)
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23B58B5F' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  
+    &:hover {
+      transform: scale(1.1);
+  
+      .navbar-toggler-icon {
+        // Ícono al hover (#C99963)
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23C99963' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(181, 139, 95, 0.3);
+      border-radius: 5px;
+    }
+}  
 /* === Cards === */
 .cards__info--prehome{
     position: relative;
@@ -38,71 +90,22 @@ $icon-accent-hover: #C99963;
 }
 .card_info--ph {
     background-color: $cards-module;
-    max-width: 350px;
-    max-height: 500px; 
-    border: none;
     transition: all 0.3s ease;
     &:hover {
         box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.3);
         transform: translateY(-5px);
     }
-    img{
-        width: 50px;
-    }
-    .card-body{
-        color: $text-color;
-        .card-title{
-            color: $title-color;
-            font-weight: bold;
-        }
-    }
 }
-.cards__explore--prehome{
-    h2{
-        color: $title-color;
+.card__explore--contentinfo-text span {
+    display: inline-block;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    color: $icon-primary;
+    &:hover {
+      transform: scale(1.5);
     }
-    .card__explore--contentph{
-        display: flex;
-        align-items: stretch;
-        
-        .card_explore--ph{
-            text-decoration: none;
-            color: $text-color;
-            background-color: $cards-module ;
-            
-            width: 300px;
-            height: auto;
-            .card_explore--info{
-                color: $text-color;
-                text-decoration: none;
-                img{
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                    border-start-start-radius: 10px;
-                    border-start-end-radius: 10px;
-
-                }
-                .card__explore--contentinfo-text{
-                    margin-top: 10px;
-                }
-                .card__explore--contentinfo-text span {
-                    display: inline-block;
-                    font-size: 16px;
-                    transition: all 0.3s ease;
-                    margin-left: 10px;
-                    color: $icon-primary;
-                
-                    &:hover {
-                      transform: scale(1.5);
-                    }
-                  }
-            }
-        }
-        
-    }
-    
-}
+  }
     .social-media--prehome{
         .social-media__preview{
             position: relative;
@@ -117,52 +120,16 @@ $icon-accent-hover: #C99963;
             .socialMedia-preHomeIcon{
                 display: flex;
                 position: absolute;
-                flex-direction: column;
-                bottom: 80px;
+                bottom: 150px;
                 right: 10px;
-                gap: 10px;
-                img{
-                    width: 36px;
-                    height: 36px;
-                }
             }
         }
         .social-media__content{
-            text-align: center;
             max-width: 700px;
-            h2{
-                color: $title-color;
-                margin-bottom: 10px;
-            }
-            p{
-                color: $text-color;
-                font-size: 18px;
-                margin-bottom: 15px;
-            }
         }
     }
-
-.invited-section__prehome{
-    h3{
-        color: $title-color;
-        font-weight: bold;
-        font-size: 30px;
-    }
-    p{
-        color: $text-color;
-        font-size: 18px;
-    }
-}
 .text__login{
     max-width: 700px;
-    h2{
-        color: $title-color;
-        font-weight: bold;
-    }
-    p{
-        color: $text-color;
-        font-size: 19px;
-    }
 }
 .forgive-password__main{
   min-height: 80vh;
@@ -177,29 +144,22 @@ $icon-accent-hover: #C99963;
     justify-content: center;
 }
 .text__forgive-pasword{
-    text-decoration: none;
     color: $icon-primary;
-    text-align: center;
-}
-.text__legal{
-    color: $text-color;
-    text-align: center;
 }
 .form__login-container{
     .form__login-ilustration{
-        img{
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            border: 3px solid $border-color;
-        }
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                border: 3px solid $border-color;
+            }
     }
-    .form__login-date {
-        flex-direction: column;
-    }
-    .form__login-date{ flex-direction: column; 
-    } 
     .form__login-date{ 
+        flex-direction: column;
+        .text__login{
+            max-width: 700px;
+        }
         label{ color: $text-color; 
         }
         input{ 
@@ -222,14 +182,8 @@ $icon-accent-hover: #C99963;
 
 .footer-prehome{
     ul{
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
         li{
             a{
-                color: $text-color;
-                text-decoration: none;
-                font-size: 16px;
                 &:hover{
                     color: $icon-accent-hover;
                     font-weight: bold;
@@ -240,76 +194,46 @@ $icon-accent-hover: #C99963;
 }
 
 @media (max-width: 768px) {
-
-    .cards__info--prehome{
-        margin-top: 8px;
-        top: 0px;
-        display: flex;
-        justify-content: center;
-    }
-    .cards-wrapper {
-        display: flex;
+    .nbar{
+        gap: 10px;
         flex-direction: column;
-        
+        align-items: end;
+        justify-content: end;
+        margin-left: auto;
     }
-    .card_info--ph {
-        display: flex;
-        flex-direction: row;
-        margin: 4px 0;
-        img{
-            display: none;
-        }
+    .cards__info--prehome{
+        top: 0px;
     }
     .card__explore--contentph{
-        flex-direction: column;
-        align-items: center;
+        
         .card_explore--ph{
-            width: 90%;
             overflow: hidden;
             transition: transform 0.3s ease;
             &:hover {
                 transform: translateY(-5px);
             }
             .card_explore--info{
-                display: flex;
-                width: auto;
-                text-align: center;
                 .card__explore--contentinfo-text{
                     display: none;
-                } 
-                img{
-                    border-radius: 10px;
-                    width: 100%;
-                    height: auto;
-                    
-                }
-                               
+                }   
+                
             }
         }
     
     }
     .social-media--prehome{
-        flex-direction: column;
+        flex-direction: column-reverse;
         .social-media__preview{
             video{
                 width: 100%;
                 height: auto;
             }
             .socialMedia-preHomeIcon{
-                bottom: 50px;
-                right: 10px;
+                bottom: 120px;
                 img{
                     width: 30px;
                     height: auto;
                 }
-            }
-        }
-    }
-    .footer-prehome{
-        ul{
-            align-items: center;
-            li{
-                align-items: center;
             }
         }
     }

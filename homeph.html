@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-black">
     <header>
@@ -16,10 +16,16 @@
                         <img src="./IMG/logo.svg" alt="Logo" height="70" class="d-inline-block align-text-top">
                     </a>
                 </div>
-                <div class="nav-links d-flex align-items-center">
-                    <a href="/login.html" class="me-4 text-decoration-none btn__secondary">Ingresa</a>
-                    <a href="/register.html" class="me-4 text-decoration-none btn__principal">Registrate</a>
+                <button class="navbar-toggler btn-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <div class="nav-links nbar d-flex align-items-center justify-content-end">
+                        <a href="/login.html" class="me-4 text-decoration-none btn__secondary">Ingresa</a>
+                        <a href="/register.html" class="me-4 text-decoration-none btn__principal">Registrate</a>
+                    </div>
                 </div>
+                
             </div>
         </nav>
     </header>
@@ -42,40 +48,46 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="container-md mt-4 cards__info--prehome" >
-            <div class="cards-wrapper d-flex justify-content-evenly">
-              <div class="card px-3 py-2 card_info--ph text-center">
-                <img src="./IMG/youtube_activity_24dp_FF7043_FILL0_wght400_GRAD0_opsz24.svg" 
-                    alt="Icono de video" class="mx-auto">
-                <div class="card-body">
-                  <h5 class="card-title">Aprende rápido y práctico</h5>
-                  <p class="card-text">Crece cada día con métodos claros y muy prácticos.</p>
+        <div class="container-md mt-4 cards__info--prehome">
+            <div class="row justify-content-center gap-3 mb-4">
+                <div class="col-md-3 col-12">
+                    <div class="card px-3 py-2 h-100 flex-fill card_info--ph border-2 text-center border-style1">
+                        <img src="./IMG/youtube_activity_24dp_FF7043_FILL0_wght400_GRAD0_opsz24.svg" 
+                            alt="Icono de video" class="mx-auto" width="50">
+                        <div class="card-body">
+                          <h5 class="title">Aprende fácil y sin límites</h5>
+                          <p class="paragraph">Descubre cursos diseñados para que aprendas haciendo.🌟</p>
+                        </div>
+                      </div>
                 </div>
-              </div>
-      
-              <div class="card px-3 py-2 card_info--ph text-center">
-                <img src="./IMG/work_24dp_FF7043_FILL0_wght400_GRAD0_opsz24.svg" 
-                    alt="Icono de video" width="50px" class="mx-auto">
-                <div class="card-body">
-                  <h5 class="card-title">Desarrolla nuevas habilidades</h5>
-                  <p class="card-text">Contenido enfocado en tu crecimiento profesional.</p>
+                <div class="col-md-3 col-12">
+                    <div class="card px-3 py-2 h-100 flex-fill card_info--ph text-center border-style1">
+                        <img src="./IMG/work_24dp_FF7043_FILL0_wght400_GRAD0_opsz24.svg" 
+                            alt="Icono de video" width="50px" class="mx-auto">
+                        <div class="card-body">
+                          <h5 class="title">Desarrolla todo tu potencial</h5>
+                          <p class="paragraph">Crea, mejora y crece con contenido pensado para ti.🚀</p>
+                        </div>
+                      </div>
                 </div>
-              </div>
-              <div class="card px-3 py-2 card_info--ph text-center">
-                <img src="./IMG/alarm_24dp_FF7043_FILL0_wght400_GRAD0_opsz24.svg" 
-                    alt="Icono de video" width="50px" class="mx-auto">
-                <div class="card-body">
-                  <h5 class="card-title">Aprende a tu ritmo</h5>
-                  <p class="card-text">Tú decides cuándo y cómo avanzar.</p>
+                <div class="col-md-3 col-12">
+                    <div class="card px-3 py-2 h-100 flex-fill card_info--ph text-center border-style1">
+                        <img src="./IMG/alarm_24dp_FF7043_FILL0_wght400_GRAD0_opsz24.svg" 
+                            alt="Icono de video" width="50px" class="mx-auto">
+                        <div class="card-body">
+                          <h5 class="title">Aprende a tu propio ritmo</h5>
+                          <p class="paragraph">Toma el control de tu progreso y avanza a tu estilo.💪</p>
+                        </div>
+                      </div>
                 </div>
-              </div>
             </div>
+            
         </div>
         <div class="container-md my-0">
             <div class="row">
-                <div class="invited-section__prehome col text-center my-5">
-                    <h3>Tu espacio para aprender, conectar y crecer.</h3>
-                    <p>
+                <div class="col text-center my-2">
+                    <h3 class="title">Tu espacio para aprender, conectar y crecer.</h3>
+                    <p class="paragraph">
                         Explora cursos diseñados para potenciar tu talento y comparte tu progreso con una comunidad que vibra contigo.
                         <br>
                         Aquí el conocimiento se vive, se comparte y se transforma en conexiones reales.
@@ -83,78 +95,80 @@
                 </div>
             </div>
         </div>
-        <div class="container-md mb-4">
-            <div class="row">
-                <div class="cards__explore--prehome text-center align-items-center">
-                    <h2>Explora gratis con un clic</h2>
-                    <div class="card__explore--contentph gap-4 mt-4 align-items-center">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card_explore--ph text-center">
-                                <a href="./viewph.html" class="card_explore--info">
-                                    <img src="./IMG/image.psd.jpg" alt="Curso 1" >
-                                    <div class="card__explore--contentinfo-text">
-                                        <h4>Desarrollo Web <span>></span></h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card_explore--ph text-center">
-                                <a href="./viewph.html" class="card_explore--info">
-                                    <img src="./IMG/1726.jpg" alt="Curso 2">
-                                    <div class="card__explore--contentinfo-text">
-                                        <h4>Marketing Digital <span>></span></h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card_explore--ph text-center">
-                                <a href="./viewph.html" class="card_explore--info">
-                                    <img src="./IMG/freepik__the-style-is-candid-image-photography-with-natural__43141.png" alt="Curso 3">
-                                    <div class="card__explore--contentinfo-text">
-                                        <h4>Diseño Gráfico <span>></span></h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card_explore--ph text-center">
-                                <a href="./viewph.html" class="card_explore--info">
-                                    <img src="./IMG/banner-fotografia.jpg" alt="Curso 4">
-                                    <div class="card__explore--contentinfo-text">
-                                        <h4>Fotografia <span>></span></h4>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>                        
-                    </div>
+        <div class="container-md mb-4 mt-2">
+            <div class="cards__explore--prehome text-center">
+              <h2 class="title">Explora gratis con un clic</h2>
+          
+              <div class="row justify-content-center mt-4 g-2">
+                <div class="col-8 col-sm-6 col-md-3 " widhth="350">
+                  <div class="card bg-cards text-center mx-auto border-style1">
+                    <a href="./viewph.html" class="card_explore--info text-decoration-none">
+                      <img src="./IMG/image.psd.jpg" alt="Curso 1" class="img-fluid w-100 rounded-3">
+                      <div class="card__explore--contentinfo-text my-2 d-none d-md-block">
+                        <h4 class="paragraph">Desarrollo Web <span>></span></h4>
+                      </div>
+                    </a>
+                  </div>
                 </div>
+          
+                <div class="col-8 col-sm-6 col-md-3">
+                  <div class="card card_explore--ph bg-cards text-center mx-auto border-style1">
+                    <a href="./viewph.html" class="card_explore--info text-decoration-none">
+                      <img src="./IMG/1726.jpg" alt="Curso 2" class="img-fluid w-100 rounded-3">
+                      <div class="card__explore--contentinfo-text my-2 d-none d-md-block">
+                        <h4 class="paragraph">Marketing Digital <span>></span></h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+          
+                <div class="col-8 col-sm-6 col-md-3">
+                  <div class="card card_explore--ph bg-cards text-center mx-auto border-style1">
+                    <a href="./viewph.html" class="card_explore--info text-decoration-none">
+                      <img src="./IMG/freepik__the-style-is-candid-image-photography-with-natural__43141.png" alt="Curso 3" class="img-fluid w-100 rounded-3">
+                      <div class="card__explore--contentinfo-text my-2 d-none d-md-block">
+                        <h4 class="paragraph">Diseño Gráfico <span>></span></h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+          
+                <div class="col-8 col-sm-6 col-md-3">
+                  <div class="card card_explore--ph bg-cards text-center mx-auto border-style1">
+                    <a href="./viewph.html" class="card_explore--info text-decoration-none">
+                      <img src="./IMG/banner-fotografia.jpg" alt="Curso 4" class="img-fluid w-100 rounded-3">
+                      <div class="card__explore--contentinfo-text my-2 d-none d-md-block">
+                        <h4 class="paragraph">Fotografía <span>></span></h4>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            
         </div>
+          
         <div class="container-md my-0">
             <div class="row">
-                <div class="invited-section__prehome col text-center my-5">
-                    <h3>Descubre, conecta y transforma tu aprendizaje</h3>
-                    <p>Un espacio donde cada curso se convierte en experiencia y cada interacción en conexión. Comparte tu progreso, potencia tu talento y descubre nuevas oportunidades junto a personas que piensan como tú. <br><br> Accede a lecciones interactivas, recursos exclusivos y una comunidad que te impulsa a avanzar. Empieza hoy y haz que tu aprendizaje cobre vida.</p>
-                    <a class="btn btn__principal mt-2" href="register.html" role="button">Regístrate ahora</a>
+                <div class="col-md text-center my-3">
+                    <h3 class="title mb-3">Descubre, conecta y transforma tu aprendizaje</h3>
+                    <p class="paragraph">Un espacio donde cada curso se convierte en experiencia y cada interacción en conexión. Comparte tu progreso, potencia tu talento y descubre nuevas oportunidades junto a personas que piensan como tú. <br><br> Accede a lecciones interactivas, recursos exclusivos y una comunidad que te impulsa a avanzar. Empieza hoy y haz que tu aprendizaje cobre vida.</p>
+                    <a class="btn btn__principal my-1" href="register.html" role="button">Regístrate ahora</a>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="footer-prehome py-2">
-        <div class="container">
-            <div class="row footer-links list-unstyled text-center">
-                <ul >
-                    <li>
-                        <a href="#">información de contacto</a>
+    <footer class="footer-prehome ">
+        <div class="container-md py-2">
+            <div class="row footer-links text-center">
+                <ul class="list-unstyled d-flex justify-content-between gap-4 mb-0"> 
+                    <li class="align-items-center justify-content-center">
+                        <a href="#" class="paragraph text-decoration-none">información de contacto</a>
                     </li>
                     <li>
-                        <a href="#">Términos  y condiciones</a>
+                        <a href="#" class="paragraph text-decoration-none pr-3">Términos  y condiciones</a>
                     </li>
                     <li>
-                        <a href="#">Politica de privacidad</a>
+                        <a href="#" class="paragraph text-decoration-none">Politica de privacidad</a>
                     </li>
                 </ul>
             </div>

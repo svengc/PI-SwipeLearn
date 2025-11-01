@@ -13,7 +13,7 @@
     }
   </style>
 
-  <rect width="400" height="100" fill="var(--bg-color)" />
+  <rect width="400" height="100" fill="" />
 
   <g transform="translate(35, 30)">
     <rect x="0" y="0" width="35" height="8" rx="2" fill="#D2B48C"/>

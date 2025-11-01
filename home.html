@@ -20,12 +20,11 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <div class="nav-links nbar d-flex align-items-center justify-content-end">
+                    <div class="nav-links d-flex nbar align-items-center justify-content-end">
                         <a href="/login.html" class="me-4 text-decoration-none btn__secondary">Ingresa</a>
                         <a href="/register.html" class="me-4 text-decoration-none btn__principal">Registrate</a>
                     </div>
                 </div>
-                
             </div>
         </nav>
     </header>
@@ -48,45 +47,65 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="container ">
-            <div class="row justify-content-center">
-                <div class="col-md my-4">
-                    <div class="social-media--prehome d-flex align-items-center justify-content-center gap-5">
-                        <div class="social-media__preview col-md-4 d-flex flex-column align-items-center">
-                            <video autoplay loop muted>
-                                <source src="./IMG/ssstik.io_@gatitooficial8_1759674215740.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="socialMedia-preHomeIcon flex-column">
-                                <a href="#"><img src="./IMG/icon-favorite-white.svg" alt="" class="mb-2" width="36" height="36"></a>
-                                <a href="#"><img src="./IMG/icon-list-white.svg" alt="" width="36" height="36"></a>
-                            </div>
-                            <a href="./register.html" class="btn btn__principal mt-4 d-md-none">Comenzar ahora</a>
+        <div class="container">
+            <div class="row text-center home__greeting my-5">
+                <h2 class="title">¡Hey [nombre]! 👋</h2>
+                <p class="paragraph">Qué bueno verte de nuevo. Explora tus cursos, descubre nuevo contenido y conecta con la comunidad que vibra contigo. 🌟</p>
+            </div>
+        </div>
+        <div class="container-md">
+            <div class="row justify-content-center gap-3">
+                <div class="col-md-2">
+                    <div class="card__status-course d-flex flex-column align-items-center text-center py-1 px-4 border-style1" width="150">
+                        <img src="./IMG/book-status.svg" alt="Course 1" class="object-fit-cover mb-2" width="50" height="50">
+                        <div class="course__info-progress">
+                            <h3 class="title">9</h3>
+                            <p class="paragraph">Cursos totales</p>
                         </div>
-                        <div class="social-media__content text-center">
-                            <h2 class="my-4 title">Aprende al estilo de tus redes favoritas</h2>
-                            <p class="mb-4 paragraph">Videos cortos, retos, tips y experiencias compartidas. Aquí no hay clases aburridas: cada contenido está pensado para inspirarte, entretenerte y ayudarte a crecer.  
-                            <br><br>
-                            Conecta con personas como tú, comparte lo que aprendes y transforma tu tiempo en scroll en momentos que te suman. Aprende, comenta, crea... ¡y disfruta el proceso!</p>
-                            <a href="./register.html" class="btn btn__principal mt-4 d-none d-lg-inline">Comenzar ahora</a>
+                    </div>
+                </div> 
+                <div class="col-md-2">
+                    <div class="card__status-course d-flex flex-column align-items-center text-center py-1 px-4 border-style1">
+                        <img src="./IMG/icon-moving.svg" alt="Course 1" class="object-fit-cover mb-2" width="50" height="50">
+                        <div class="course__info-progress">
+                            <h3 class="title">4</h3>
+                            <p class="paragraph">En progreso</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-2">
+                    <div class="card__status-course d-flex flex-column align-items-center text-center py-1 px-4 border-style1">
+                        <img src="./IMG/icon-certificate.svg" alt="Course 1" class="object-fit-cover mb-2"width="50" height="50">
+                        <div class="course__info-progress">
+                            <h3 class="title">5</h3>
+                            <p class="paragraph">Por comenzar</p>
+                        </div>
+                    </div>
+                </div>                                        
+                <div class="col-md-2">
+                    <div class="card__status-course d-flex flex-column align-items-center text-center py-1 px-4 border-style1">
+                        <img src="./IMG/icon-cup.svg" alt="Course 1" class="object-fit-cover mb-2"width="50" height="50">
+                        <div class="course__info-progress">
+                            <h3 class="title">5</h3>
+                            <p class="paragraph">Certificados</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="footer-prehome ">
-        <div class="container-md py-2">
-            <div class="row footer-links text-center">
-                <ul class="list-unstyled d-flex justify-content-between gap-4 mb-0"> 
-                    <li class="align-items-center justify-content-center">
-                        <a href="#" class="paragraph text-decoration-none">información de contacto</a>
+    <footer class="footer-prehome mt-5">
+        <div class="container">
+            <div class="row footer-links list-unstyled text-center">
+                <ul >
+                    <li>
+                        <a href="#">información de contacto</a>
                     </li>
                     <li>
-                        <a href="#" class="paragraph text-decoration-none pr-3">Términos  y condiciones</a>
+                        <a href="#">Términos  y condiciones</a>
                     </li>
                     <li>
-                        <a href="#" class="paragraph text-decoration-none">Politica de privacidad</a>
+                        <a href="#">Politica de privacidad</a>
                     </li>
                 </ul>
             </div>
