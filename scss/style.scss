@@ -1,4 +1,5 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@use "../node_modules/bootstrap/scss/bootstrap" as *;
+
 
 $link-btn: #B58B5F;
 $link-btn_hover: #9C764C;
@@ -17,12 +18,18 @@ $icon-accent-hover: #C99963;
     border: 3px solid $border-color;
     border-radius: 10px;
 }
+.bg-footerh{
+    background-color: rgba($icon-secondary, .5);
+    backdrop-filter: blur(2px);
+  }
+  
 .title{
     color: $title-color;
     font-weight: bold;
 }
 .paragraph{
     color: $text-color;
+    font-size: 18px;
 }
 .paragraph--secondary{
     color: $icon-primary;
@@ -131,6 +138,19 @@ $icon-accent-hover: #C99963;
 .text__login{
     max-width: 700px;
 }
+.filter__course{
+    input{
+        &:focus{
+            background-color: $cards-module;
+            border: solid $icon-accent;
+        }
+
+        &::placeholder{
+            color: $text-color;
+            text-align: center;
+        }
+    }
+}
 .forgive-password__main{
   min-height: 80vh;
   display: flex;
@@ -192,6 +212,23 @@ $icon-accent-hover: #C99963;
         }
     }
 }
+.footer__p {
+    height: 48px;
+    a {
+      transition: all 0.3s ease;
+      p {
+        display: none;
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        p {
+          display: block;
+        }
+      }
+    }
+  }
+  
+  
 
 @media (max-width: 768px) {
     .nbar{
