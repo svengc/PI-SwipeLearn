@@ -11869,6 +11869,35 @@ textarea.form-control-lg {
   backdrop-filter: blur(2px);
 }
 
+.comment-box-commentary {
+  max-height: 120px;
+  overflow-y: auto;
+}
+.comment-box-commentary:hover {
+  max-height: 200px;
+}
+
+.comment-box-sugered {
+  max-height: 80px;
+  overflow: auto;
+}
+.comment-box-sugered img {
+  width: 40px;
+  height: auto;
+}
+
+.comment-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.comment-text:hover, .comment-text:focus {
+  -webkit-line-clamp: unset;
+  font-size: 12px;
+}
+
 .title {
   color: #E7D7C1;
   font-weight: bold;

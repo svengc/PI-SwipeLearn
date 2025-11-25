@@ -21,8 +21,33 @@ $icon-accent-hover: #C99963;
 .bg-footerh{
     background-color: rgba($icon-secondary, .5);
     backdrop-filter: blur(2px);
-  }
-  
+}
+.comment-box-commentary{
+    max-height: 120px; 
+    overflow-y: auto;
+    &:hover{
+        max-height: 200px;
+    }
+}
+.comment-box-sugered{
+    max-height: 80px; 
+    overflow: auto;
+    img{
+        width: 40px;
+        height: auto;
+    }
+}
+.comment-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover, &:focus {
+        -webkit-line-clamp: unset;
+        font-size: 12px;
+    }
+}
 .title{
     color: $title-color;
     font-weight: bold;
