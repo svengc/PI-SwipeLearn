@@ -259,7 +259,8 @@ $icon-accent-hover: #C99963;
         border: 3px solid $border-color; 
         color: $text-color; 
         text-align: center;
-        &:focus{ 
+        &:focus{
+            color: $text-color;
             background-color: $cards-module;
             border: 1px solid $icon-accent; 
             box-shadow: 0 0 5px $icon-accent; 
@@ -348,6 +349,17 @@ $icon-accent-hover: #C99963;
             }
         }
     
+    }
+    .comment-text-profile{
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover, &:focus {
+            -webkit-line-clamp: unset;
+            font-size: 12px;
+        }
     }
     .social-media--prehome{
         flex-direction: column-reverse;

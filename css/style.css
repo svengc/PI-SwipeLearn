@@ -12111,6 +12111,7 @@ textarea.form-control-lg {
   text-align: center;
 }
 .form__login-profile input:focus {
+  color: #A7B1BA;
   background-color: #1F1F1F;
   border: 1px solid #B58B5F;
   box-shadow: 0 0 5px #B58B5F;
@@ -12181,6 +12182,17 @@ textarea.form-control-lg {
   }
   .card__explore--contentph .card_explore--ph .card_explore--info .card__explore--contentinfo-text {
     display: none;
+  }
+  .comment-text-profile {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .comment-text-profile:hover, .comment-text-profile:focus {
+    -webkit-line-clamp: unset;
+    font-size: 12px;
   }
   .social-media--prehome {
     flex-direction: column-reverse;
