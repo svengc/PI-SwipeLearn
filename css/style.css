@@ -11912,6 +11912,10 @@ textarea.form-control-lg {
   color: #D2B48C;
 }
 
+.paragraph--tertiary {
+  color: #A7B1BA;
+}
+
 .bg-cards {
   background-color: #1F1F1F;
 }
@@ -11924,7 +11928,6 @@ textarea.form-control-lg {
   min-height: 84vh;
 }
 
-/* === Botón principal === */
 .btn__principal {
   background-color: #B58B5F;
   color: white;
@@ -12085,6 +12088,7 @@ textarea.form-control-lg {
   text-align: center;
 }
 .form__login-container .form__login-date input:focus {
+  background-color: #1F1F1F;
   border: 1px solid #B58B5F;
   box-shadow: 0 0 5px #B58B5F;
   outline: none;
@@ -12092,6 +12096,45 @@ textarea.form-control-lg {
 .form__login-container .form__login-date input::placeholder {
   color: #A7B1BA;
   text-align: center;
+}
+
+.form__login-profile .text__login {
+  max-width: 700px;
+}
+.form__login-profile label {
+  color: #A7B1BA;
+}
+.form__login-profile input {
+  background-color: #1F1F1F;
+  border: 3px solid #2A2A2A;
+  color: #A7B1BA;
+  text-align: center;
+}
+.form__login-profile input:focus {
+  background-color: #1F1F1F;
+  border: 1px solid #B58B5F;
+  box-shadow: 0 0 5px #B58B5F;
+  outline: none;
+}
+.form__login-profile input::placeholder {
+  color: #A7B1BA;
+  opacity: 0.5;
+}
+.form__login-profile textarea {
+  background-color: #1F1F1F;
+  border: 3px solid #2A2A2A;
+  color: #A7B1BA;
+  text-align: center;
+}
+.form__login-profile textarea:focus {
+  background-color: #1F1F1F;
+  border: 1px solid #B58B5F;
+  box-shadow: 0 0 5px #B58B5F;
+  outline: none;
+}
+.form__login-profile textarea::placeholder {
+  color: #A7B1BA;
+  opacity: 0.5;
 }
 
 .footer-prehome ul li a:hover {

@@ -37,7 +37,7 @@ $icon-accent-hover: #C99963;
         height: auto;
     }
 }
-.comment-text {
+.comment-text{
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -59,6 +59,9 @@ $icon-accent-hover: #C99963;
 .paragraph--secondary{
     color: $icon-primary;
 }
+.paragraph--tertiary{
+    color: $icon-secondary;
+}
 .bg-cards{
     background-color: $cards-module;
 }
@@ -69,8 +72,8 @@ $icon-accent-hover: #C99963;
 .fpassword{
     min-height: 84vh;   
 }
-/* === Botón principal === */
 .btn__principal {
+    
   background-color: $link-btn;
   color: white;
   padding: 10px 20px;
@@ -233,6 +236,7 @@ $icon-accent-hover: #C99963;
             color: $text-color; 
             text-align: center;
             &:focus{ 
+                background-color: $cards-module;
                 border: 1px solid $icon-accent; 
                 box-shadow: 0 0 5px $icon-accent; 
                 outline: none; 
@@ -244,6 +248,45 @@ $icon-accent-hover: #C99963;
         } 
     } 
 }
+.form__login-profile{ 
+    .text__login{
+        max-width: 700px;
+    }
+    label{ color: $text-color; 
+    }
+    input{ 
+        background-color: $cards-module;
+        border: 3px solid $border-color; 
+        color: $text-color; 
+        text-align: center;
+        &:focus{ 
+            background-color: $cards-module;
+            border: 1px solid $icon-accent; 
+            box-shadow: 0 0 5px $icon-accent; 
+            outline: none; 
+        } 
+        &::placeholder{ 
+            color: $text-color; 
+            opacity: 0.5;
+        }
+    } 
+    textarea{ 
+        background-color: $cards-module;
+        border: 3px solid $border-color; 
+        color: $text-color; 
+        text-align: center;
+        &:focus{ 
+            background-color: $cards-module;
+            border: 1px solid $icon-accent; 
+            box-shadow: 0 0 5px $icon-accent; 
+            outline: none; 
+        } 
+        &::placeholder{ 
+            color: $text-color; 
+            opacity: 0.5;
+        }
+    }
+} 
 
 .footer-prehome{
     ul{
