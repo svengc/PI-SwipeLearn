@@ -11898,6 +11898,57 @@ textarea.form-control-lg {
   font-size: 12px;
 }
 
+/* Contenedor general */
+.carousel-wrapper {
+  position: relative;
+}
+
+/* Carrusel */
+.carousel-horizontal {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.carousel-horizontal::-webkit-scrollbar {
+  display: none; /* Opcional: oculta la barra */
+}
+
+/* Cards dentro del carrusel */
+.carousel-item-card {
+  flex: 0 0 auto;
+  width: 270px;
+}
+
+/* Botones */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9333333333);
+  border: none;
+  font-size: 2rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn.prev {
+  left: -10px;
+}
+
+.carousel-btn.next {
+  right: -10px;
+}
+
+.carousel-btn:hover {
+  background: #ffffff;
+}
+
 .title {
   color: #E7D7C1;
   font-weight: bold;
