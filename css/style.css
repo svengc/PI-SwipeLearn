@@ -12243,6 +12243,10 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 768px) {
+  .banner__img {
+    width: 100%;
+    height: auto;
+  }
   .nbar {
     gap: 10px;
     flex-direction: column;
